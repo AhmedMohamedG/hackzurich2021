@@ -681,6 +681,78 @@
                     "category": "social life"
                 },
                 {
+                    "id": "29",
+                    "type": "MultiAnswers",
+                    "text": "How would you rate your overall health during the past week?",
+                    "answers": [
+                        {
+                            "text": "Very Poor",
+                            "number": "1"
+                        },
+                        {
+                            "text": "-",
+                            "number": "2"
+                        },
+                        {
+                            "text": "-",
+                            "number": "3"
+                        },
+                        {
+                            "text": "-",
+                            "number": "4"
+                        },
+                        {
+                            "text": "-",
+                            "number": "5"
+                        },
+                        {
+                            "text": "-",
+                            "number": "6"
+                        },
+                        {
+                            "text": "Excellent",
+                            "number": "7"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
+                    "id": "30",
+                    "type": "MultiAnswers",
+                    "text": "How would you rate your overall quality of life during the past week?",
+                    "answers": [
+                        {
+                            "text": "Very Poor",
+                            "number": "1"
+                        },
+                        {
+                            "text": "-",
+                            "number": "2"
+                        },
+                        {
+                            "text": "-",
+                            "number": "3"
+                        },
+                        {
+                            "text": "-",
+                            "number": "4"
+                        },
+                        {
+                            "text": "-",
+                            "number": "5"
+                        },
+                        {
+                            "text": "-",
+                            "number": "6"
+                        },
+                        {
+                            "text": "Excellent",
+                            "number": "7"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
                     "id": "31",
                     "type": "MultiAnswers",
                     "text": "Have you had a dry mouth?",
@@ -1159,111 +1231,6 @@
                         }
                     ],
                     "category": "chest"
-                },
-                {
-                    "id": "54",
-                    "type": "MultiAnswers",
-                    "text": "Have you had tingling hands or feet?",
-                    "answers": [
-                        {
-                            "text": "Not at all",
-                            "number": "1"
-                        },
-                        {
-                            "text": "A little",
-                            "number": "2"
-                        },
-                        {
-                            "text": "Somewhat",
-                            "number": "3"
-                        },
-                        {
-                            "text": "Quite a bit",
-                            "number": "4"
-                        },
-                        {
-                            "text": "Very Much",
-                            "number": "5"
-                        }
-                    ],
-                    "category": "general"
-                }
-            ]
-        },
-        {
-            "time_scale": "For the following questions please circle the number between 1 and 7 that best applies to you",
-            "questions": [
-                {
-                    "id": "29",
-                    "type": "MultiAnswers",
-                    "text": "How would you rate your overall health during the past week?",
-                    "answers": [
-                        {
-                            "text": "Very Poor",
-                            "number": "1"
-                        },
-                        {
-                            "text": "-",
-                            "number": "2"
-                        },
-                        {
-                            "text": "-",
-                            "number": "3"
-                        },
-                        {
-                            "text": "-",
-                            "number": "4"
-                        },
-                        {
-                            "text": "-",
-                            "number": "5"
-                        },
-                        {
-                            "text": "-",
-                            "number": "6"
-                        },
-                        {
-                            "text": "Excellent",
-                            "number": "7"
-                        }
-                    ],
-                    "category": "general"
-                },
-                {
-                    "id": "30",
-                    "type": "MultiAnswers",
-                    "text": "How would you rate your overall quality of life during the past week?",
-                    "answers": [
-                        {
-                            "text": "Very Poor",
-                            "number": "1"
-                        },
-                        {
-                            "text": "-",
-                            "number": "2"
-                        },
-                        {
-                            "text": "-",
-                            "number": "3"
-                        },
-                        {
-                            "text": "-",
-                            "number": "4"
-                        },
-                        {
-                            "text": "-",
-                            "number": "5"
-                        },
-                        {
-                            "text": "-",
-                            "number": "6"
-                        },
-                        {
-                            "text": "Excellent",
-                            "number": "7"
-                        }
-                    ],
-                    "category": "general"
                 }
             ]
         },
