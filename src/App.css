@@ -44,3 +44,7 @@ background-color:rgb(217, 238, 245);
 .sliedContainer{
   margin: auto;
 }
+.navEl{
+  margin: 2rem;
+  font-size: 1.5rem;
+}

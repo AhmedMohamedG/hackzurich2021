@@ -4,15 +4,19 @@ import users from './data/dummyUserData';
 import React, { useState } from 'react';
 import Dashboard from './Dashboard';
 import VoiceRecorder from './VoiceRecorder';
-
 import PatientDashboard from './PatientDashboard'
+import Router from './Router'
 import Button from '@mui/material/Button';
-
+import { withRouter } from 'react-router';
+import { useHistory } from "react-router-dom";
+import NavBar from './NavBar'
 function App() {
   console.log('json data', JSON.parse(get_breastcancerPROM('patient1','patient1')))
   const [isLogedIn, setIsLogedIn] = useState(false);
   const [user, setUser] = useState(false);
   const [proms, setProms] = useState([]);
+  let history = useHistory();
+
 
   const getProms = (obj) =>{
     const {userName , userID , conditions} = obj;
@@ -47,22 +51,20 @@ function App() {
     if(userObject){
       setIsLogedIn(true);
       setUser(userObject);
-      getProms(userObject)
+      getProms(userObject);
+      history.push('/Patientdashboard')
     }else{
      document.getElementById('loginFormMsg').innerText = 'You have entered the wrong name or ID, please try again.'
     }
   }
   return (
     <div className="App">
-    <Dashboard />
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <VoiceRecorder />
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <header className="App-header">
+      <nav className="App-nav">
         <Button onClick={e => handleCLick(e)}>
           logOut
         </Button>
-      </header>
+        <NavBar />
+      </nav>
       {
         !isLogedIn ?
         <form 
@@ -103,15 +105,13 @@ function App() {
             </Button>
           <p id="loginFormMsg"></p>
       </form>:
-     <PatientDashboard 
+     <Router 
         user= {user}
         proms = {proms}
      />
       }
-      
-      
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
