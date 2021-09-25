@@ -2,6 +2,8 @@ import './App.css';
 import {send_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
 import React, { useState } from 'react';
+import Dashboard from './Dashboard';
+import VoiceRecorder from './VoiceRecorder';
 
 function App() {
   console.log('json data', JSON.parse(send_breastcancerPROM('patient1','patient1')))
@@ -24,6 +26,10 @@ function App() {
   }
   return (
     <div className="App">
+    <Dashboard />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <VoiceRecorder />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <header className="App-header">
         <button onClick={e => handleCLick(e)}>
           logOut
