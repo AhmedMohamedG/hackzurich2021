@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# login
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+use one of the following credentials:
+* userName: patient1 - userID:1
+* userName: patient2 - userID:2
+* userName: patient3 - userID:3
+* userName: patient4 - userID:4
+
+
+# Deployment to github pages
+The project is depoyed at:
+ [https://ahmedmohamedg.github.io/hackzurich2021/](https://ahmedmohamedg.github.io/hackzurich2021/)
 
 ## Available Scripts
 
