@@ -135,6 +135,10 @@ def summarize_patient_history(filepath: str = "src\\data\\ICHOM_PROM_breast_canc
     for row in inverse_questions:
         norm_data.loc[row] = norm_data.loc[row] - 2*(norm_data.loc[row]-0.5)
 
+    # Inverse everything and make into percentage, so that a high value means good condition/performance
+    for row in norm_data.index:
+        norm_data.loc[row] = (norm_data.loc[row] - 2*(norm_data.loc[row]-0.5)) * 100
+
     # Put processed data back together with labels
     data = pd.concat((data_filt.iloc[:, :2], norm_data), axis=1)
 
