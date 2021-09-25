@@ -1,0 +1,1348 @@
+{
+    "sections": [
+        {
+            "time_scale": "Generally",
+            "questions": [
+                {
+                    "id": "1",
+                    "type": "MultiAnswers",
+                    "text": "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "2",
+                    "type": "MultiAnswers",
+                    "text": "Do you have any trouble taking a long walk?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "3",
+                    "type": "MultiAnswers",
+                    "text": "Do you have any trouble taking a short walk outside of the house?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "4",
+                    "type": "MultiAnswers",
+                    "text": "Do you need to stay in bed or a chair during the day?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "5",
+                    "type": "MultiAnswers",
+                    "text": "Do you need help with eating, dressing, washing yourself or using the toilet?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                }
+            ]
+        },
+        {
+            "time_scale": "During the past week:",
+            "questions": [
+                {
+                    "id": "6",
+                    "type": "MultiAnswers",
+                    "text": "Were you limited in doing either your work or other daily activities?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "7",
+                    "type": "MultiAnswers",
+                    "text": "Were you limited in pursuing your hobbies or other leisure time activities?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "8",
+                    "type": "MultiAnswers",
+                    "text": "Were you short of breath?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "9",
+                    "type": "MultiAnswers",
+                    "text": "Have you had pain?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
+                    "id": "10",
+                    "type": "MultiAnswers",
+                    "text": "Did you need to rest?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "11",
+                    "type": "MultiAnswers",
+                    "text": "Have you had trouble sleeping?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "12",
+                    "type": "MultiAnswers",
+                    "text": "Have you felt weak?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "13",
+                    "type": "MultiAnswers",
+                    "text": "Have you lacked appetite?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "food"
+                },
+                {
+                    "id": "14",
+                    "type": "MultiAnswers",
+                    "text": "Have you felt nauseated?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "food"
+                },
+                {
+                    "id": "15",
+                    "type": "MultiAnswers",
+                    "text": "Have you vomited?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "food"
+                },
+                {
+                    "id": "16",
+                    "type": "MultiAnswers",
+                    "text": "Have you been constipated?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "food"
+                },
+                {
+                    "id": "17",
+                    "type": "MultiAnswers",
+                    "text": "Have you had diarrhea?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "food"
+                },
+                {
+                    "id": "18",
+                    "type": "MultiAnswers",
+                    "text": "Were you tired?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "energy"
+                },
+                {
+                    "id": "19",
+                    "type": "MultiAnswers",
+                    "text": "Did pain interfere with your daily activities?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
+                    "id": "20",
+                    "type": "MultiAnswers",
+                    "text": "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "21",
+                    "type": "MultiAnswers",
+                    "text": "Did you feel tense?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "22",
+                    "type": "MultiAnswers",
+                    "text": "Did you worry?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "23",
+                    "type": "MultiAnswers",
+                    "text": "Did you feel irritable?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "24",
+                    "type": "MultiAnswers",
+                    "text": "Did you feel depressed?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "25",
+                    "type": "MultiAnswers",
+                    "text": "Have you had difficulty remembering things?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "26",
+                    "type": "MultiAnswers",
+                    "text": "Has your physical condition or medical treatment interfered with your family life?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "social life"
+                },
+                {
+                    "id": "27",
+                    "type": "MultiAnswers",
+                    "text": "Has your physical condition or medical treatment interfered with your social activities?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "social life"
+                },
+                {
+                    "id": "28",
+                    "type": "MultiAnswers",
+                    "text": "Has your physical condition or medical treatment caused you financial difficulties?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "social life"
+                },
+                {
+                    "id": "31",
+                    "type": "MultiAnswers",
+                    "text": "Have you had a dry mouth?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "eating"
+                },
+                {
+                    "id": "32",
+                    "type": "MultiAnswers",
+                    "text": "Have food and drink tasted different than usual?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "eating"
+                },
+                {
+                    "id": "33",
+                    "type": "MultiAnswers",
+                    "text": "Have your eyes been painful, irritated or watery?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "head"
+                },
+                {
+                    "id": "34",
+                    "type": "MultiAnswers",
+                    "text": "Have you lost any hair?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "head"
+                },
+                {
+                    "id": "35",
+                    "type": "MultiAnswers",
+                    "text": "Answer this question only if you have lost any hair: Have you been upset by the loss of your hair?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "head"
+                },
+                {
+                    "id": "36",
+                    "type": "MultiAnswers",
+                    "text": "Have you felt ill or unwell?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
+                    "id": "37",
+                    "type": "MultiAnswers",
+                    "text": "Have you had hot flushes?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "head"
+                },
+                {
+                    "id": "38",
+                    "type": "MultiAnswers",
+                    "text": "Have you had headaches?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "head"
+                },
+                {
+                    "id": "39",
+                    "type": "MultiAnswers",
+                    "text": "Have you felt physically less attractive as a result of your disease or treatment?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "social life"
+                },
+                {
+                    "id": "40",
+                    "type": "MultiAnswers",
+                    "text": "Have you felt less feminine as a result of your disease or treatment?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "41",
+                    "type": "MultiAnswers",
+                    "text": "Have you had problems looking at yourself naked?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "42",
+                    "type": "MultiAnswers",
+                    "text": "Have you been dissatisfied with your body?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "43",
+                    "type": "MultiAnswers",
+                    "text": "Have you worried about your health in the future?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "mental health"
+                },
+                {
+                    "id": "47",
+                    "type": "MultiAnswers",
+                    "text": "Have you had any pain in your arm or shoulder?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "48",
+                    "type": "MultiAnswers",
+                    "text": "Have you had a swollen arm or hand?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "49",
+                    "type": "MultiAnswers",
+                    "text": "Have you had problems raising your arm or moving it sideways?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "50",
+                    "type": "MultiAnswers",
+                    "text": "Have you had any pain in the area of your affected breast?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "51",
+                    "type": "MultiAnswers",
+                    "text": "Has the area of your affected breast been swollen?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "52",
+                    "type": "MultiAnswers",
+                    "text": "Has the area of your affected breast been oversensitive?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "53",
+                    "type": "MultiAnswers",
+                    "text": "Have you had skin problems on or in the area of your affected breast (e.g., itchy, dry, flaky)?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "chest"
+                },
+                {
+                    "id": "54",
+                    "type": "MultiAnswers",
+                    "text": "Have you had tingling hands or feet?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Somewhat",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "4"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "5"
+                        }
+                    ],
+                    "category": "general"
+                }
+            ]
+        },
+        {
+            "time_scale": "For the following questions please circle the number between 1 and 7 that best applies to you",
+            "questions": [
+                {
+                    "id": "29",
+                    "type": "MultiAnswers",
+                    "text": "How would you rate your overall health during the past week?",
+                    "answers": [
+                        {
+                            "text": "Very Poor",
+                            "number": "1"
+                        },
+                        {
+                            "text": "-",
+                            "number": "2"
+                        },
+                        {
+                            "text": "-",
+                            "number": "3"
+                        },
+                        {
+                            "text": "-",
+                            "number": "4"
+                        },
+                        {
+                            "text": "-",
+                            "number": "5"
+                        },
+                        {
+                            "text": "-",
+                            "number": "6"
+                        },
+                        {
+                            "text": "Excellent",
+                            "number": "7"
+                        }
+                    ],
+                    "category": "general"
+                },
+                {
+                    "id": "30",
+                    "type": "MultiAnswers",
+                    "text": "How would you rate your overall quality of life during the past week?",
+                    "answers": [
+                        {
+                            "text": "Very Poor",
+                            "number": "1"
+                        },
+                        {
+                            "text": "-",
+                            "number": "2"
+                        },
+                        {
+                            "text": "-",
+                            "number": "3"
+                        },
+                        {
+                            "text": "-",
+                            "number": "4"
+                        },
+                        {
+                            "text": "-",
+                            "number": "5"
+                        },
+                        {
+                            "text": "-",
+                            "number": "6"
+                        },
+                        {
+                            "text": "Excellent",
+                            "number": "7"
+                        }
+                    ],
+                    "category": "general"
+                }
+            ]
+        },
+        {
+            "time_scale": "During the past four weeks:",
+            "questions": [
+                {
+                    "id": "44",
+                    "type": "MultiAnswers",
+                    "text": "Have you been interested in sex?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "private"
+                },
+                {
+                    "id": "45",
+                    "type": "MultiAnswers",
+                    "text": "Have you been sexually active (with or without intercourse)?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "private"
+                },
+                {
+                    "id": "46",
+                    "type": "MultiAnswers",
+                    "text": "Has sex been enjoyable for you?",
+                    "answers": [
+                        {
+                            "text": "Not at all",
+                            "number": "1"
+                        },
+                        {
+                            "text": "A little",
+                            "number": "2"
+                        },
+                        {
+                            "text": "Quite a bit",
+                            "number": "3"
+                        },
+                        {
+                            "text": "Very Much",
+                            "number": "4"
+                        }
+                    ],
+                    "category": "private"
+                }
+            ]
+        }
+    ]
+}
