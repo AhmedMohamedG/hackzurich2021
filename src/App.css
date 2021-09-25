@@ -1,3 +1,27 @@
 .App {
   text-align: center;
+  font-size: 1.2rem;
 }
+
+/*Login - Start*/
+#logInform{
+width: 90%;
+}
+#logInform *{
+  margin: 10vh auto;
+  min-height: 10vh;
+}
+#logInform label{
+  width: 20%;
+  margin-right: 2% ;
+}
+#logInform input[type='text']{
+  width: 75%;
+}
+
+#logInform input[type='submit']{
+  display:block;
+  margin: auto;
+}
+
+/*Login - End*/
