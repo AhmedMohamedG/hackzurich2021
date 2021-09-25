@@ -11,9 +11,10 @@ import json
 import os
 
 import pandas as pd
+import numpy as np
 
 
-def xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer.xlsx") -> None:
+def questionnaire_xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer.xlsx") -> None:
     """
     Loads questionnaire data from a curated Excel file (with question categories) and save it as a JSON file with
     structure:
@@ -84,7 +85,86 @@ def xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer.xlsx") -> 
     json_filepath = os.path.splitext(filepath)[0] + '.json'
     with open(json_filepath, 'w') as f:
         json.dump(data_dict, f, indent=4)
-        
+
+# def answers_xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer_dummy_answers.xlsx") -> None:
+#     """
+#
+#     Args:
+#         filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
+#     """
+#
+#     # Hardcoded IDs of questions that have the inverse meaning (high number meaning good instead of bad)
+#     inverse_questions = (29, 30, 44, 45, 46)
+#
+#     # Load data
+#     excel_data = pd.read_excel(filepath)
+#     # Clean data (remove section headers and question columns)
+#     data_filt = excel_data.loc[~pd.isna(excel_data['Number'])]
+#     data_filt = data_filt.drop(data_filt.columns[np.arange(1,10)], axis=1)
+#
+#     # Hardcoded dummy info about the patient
+#     name = 'Mary Smith'
+#     birth = '1962/03/14'
+#     surgery_date = '2016/02/21'
+
+
+def summarize_patient_history(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer_dummy_answers.xlsx") -> None:
+    """
+    Takes dummy answers from Excel file, simulating patient history, and calculates average performance values (0-100)
+    for 8 categories across different survey times.
+
+    Args:
+        filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
+    """
+
+    # Load data
+    excel_data = pd.read_excel(filepath)
+    # Clean data (remove section headers and question columns)
+    data_filt = excel_data.loc[~pd.isna(excel_data['Number'])]
+    # Get maximum for each question for normalization
+    max_value = data_filt.iloc[:, 2:9].max(axis=1)
+    data_filt = data_filt.drop(data_filt.columns[np.arange(1,9)], axis=1)
+
+    data_only = data_filt.drop(columns=['Number', 'Category']).T
+
+    # Normalize answers to 0-1
+    norm_data = (data_only - np.ones(len(max_value))) / (max_value - np.ones(len(max_value)))
+    norm_data = norm_data.T
+
+    # Flip values of questions with inverse meaning
+    # Hardcoded IDs of questions that have the inverse meaning (high number meaning good instead of bad)
+    inverse_questions = np.array((31, 32, 48, 49, 50))
+    for row in inverse_questions:
+        norm_data.loc[row] = norm_data.loc[row] - 2*(norm_data.loc[row]-0.5)
+
+    # Inverse everything and make into percentage, so that a high value means good condition/performance
+    for row in norm_data.index:
+        norm_data.loc[row] = (norm_data.loc[row] - 2*(norm_data.loc[row]-0.5)) * 100
+
+    # Put processed data back together with labels
+    data = pd.concat((data_filt.iloc[:, :2], norm_data), axis=1)
+
+    # Get list of survey dates as possible x-values
+    survey_dates = list(data_filt.columns[2:])
+    # Hardcoded time in years since treatment start
+    years_since_treatment = [0.5, 1, 2, 3, 4, 5]
+
+    # Get averages and SD per category
+    data_dic = dict.fromkeys(data_filt['Category'].unique())
+    data_dic['survey_dates'] = survey_dates
+    data_dic['years_since_treatment'] = years_since_treatment
+
+    for cat in data['Category'].unique():
+        curr_cat = data.loc[data['Category'] == cat].drop(['Number', 'Category'], axis=1)
+        data_dic[cat] = {}
+        data_dic[cat]['mean'] = list(curr_cat.mean())
+        data_dic[cat]['std'] = list(curr_cat.std())
+
+    # Write data to JSON
+    json_filepath = os.path.dirname(filepath) + '\\plotting_data.json'
+    with open(json_filepath, 'w') as f:
+        json.dump(data_dic, f, indent=4)
+
 
 if __name__ == "__main__":
     pass
