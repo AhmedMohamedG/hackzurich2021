@@ -86,30 +86,32 @@ def questionnaire_xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_can
     with open(json_filepath, 'w') as f:
         json.dump(data_dict, f, indent=4)
 
-def answers_xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer_dummy_answers.xlsx") -> None:
-    """
-
-    Args:
-        filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
-    """
-
-    # Hardcoded IDs of questions that have the inverse meaning (high number meaning good instead of bad)
-    inverse_questions = (29, 30, 44, 45, 46)
-
-    # Load data
-    excel_data = pd.read_excel(filepath)
-    # Clean data (remove section headers and question columns)
-    data_filt = excel_data.loc[~pd.isna(excel_data['Number'])]
-    data_filt = data_filt.drop(data_filt.columns[np.arange(1,10)], axis=1)
-
-    # Hardcoded dummy info about the patient
-    name = 'Mary Smith'
-    birth = '1962/03/14'
-    surgery_date = '2016/02/21'
+# def answers_xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer_dummy_answers.xlsx") -> None:
+#     """
+#
+#     Args:
+#         filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
+#     """
+#
+#     # Hardcoded IDs of questions that have the inverse meaning (high number meaning good instead of bad)
+#     inverse_questions = (29, 30, 44, 45, 46)
+#
+#     # Load data
+#     excel_data = pd.read_excel(filepath)
+#     # Clean data (remove section headers and question columns)
+#     data_filt = excel_data.loc[~pd.isna(excel_data['Number'])]
+#     data_filt = data_filt.drop(data_filt.columns[np.arange(1,10)], axis=1)
+#
+#     # Hardcoded dummy info about the patient
+#     name = 'Mary Smith'
+#     birth = '1962/03/14'
+#     surgery_date = '2016/02/21'
 
 
 def summarize_patient_history(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer_dummy_answers.xlsx") -> None:
     """
+    Takes dummy answers from Excel file, simulating patient history, and calculates average performance values (0-100)
+    for 8 categories across different survey times.
 
     Args:
         filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
