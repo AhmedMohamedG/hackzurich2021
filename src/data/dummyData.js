@@ -35,7 +35,27 @@ const breastcancerPROM = {
 }
 
 
-export const send_breastcancerPROM = (patientName,patientID )=>{
-    const questionsObject = { patientName,patientID,breastcancerPROM }
+export const get_breastcancerPROM = (patientName,patientID )=>{
+    const questionsObject = { patientName,
+                                 patientID,
+                                 type:'breastcancerPROM',
+                                 questions:breastcancerPROM }
     return JSON.stringify(questionsObject);
 }
+
+export const get_lungcancerPROM = (patientName,patientID )=>{
+    const questionsObject = {patientName,
+                                patientID,
+                                type:'get_lungcancerPROM',
+                                questions:breastcancerPROM }
+    return JSON.stringify(questionsObject);
+}
+
+export const get_coloncancerPROM = (patientName,patientID )=>{
+    const questionsObject = { patientName,
+                                patientID,
+                                type:'coloncancerPROM',
+                                questions:breastcancerPROM  }
+    return JSON.stringify(questionsObject);
+}
+
