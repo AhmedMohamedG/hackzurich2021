@@ -2,6 +2,9 @@ import './App.css';
 import {get_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
 import React, { useState } from 'react';
+import Dashboard from './Dashboard';
+import VoiceRecorder from './VoiceRecorder';
+
 import PatientDashboard from './PatientDashboard'
 import Button from '@mui/material/Button';
 
@@ -51,6 +54,10 @@ function App() {
   }
   return (
     <div className="App">
+    <Dashboard />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <VoiceRecorder />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <header className="App-header">
         <Button onClick={e => handleCLick(e)}>
           logOut
