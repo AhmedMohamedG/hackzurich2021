@@ -4,7 +4,7 @@ function Prom(props) {
   const {prom} = props;
   let questionsCounter = 0;
   return (
-    <div className="App">
+    <div className="promContanier">
         {prom.questions.sections.map((section,index )=>{
             const sectionIndex = index;
             return(

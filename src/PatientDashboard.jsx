@@ -4,7 +4,7 @@ function PatientDashboard(props) {
   const {user, proms} = props;
   
   return (
-    <div className="App">
+    <div className="Patientdashboard">
 {proms.map(prom =>{
     return <Prom prom={prom} />
 })

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /*Login - Start*/
@@ -25,3 +25,22 @@ width: 90%;
 }
 
 /*Login - End*/
+.promContanier{
+background-color:rgb(217, 238, 245);
+}
+
+.QuestionsSection{
+  border: 1px solid lightgray;
+  width:90%;
+  margin: auto;
+}
+
+.question{
+  background-color: white;
+  margin:2rem;
+  border:1px solid black;
+  padding: 2rem 0;
+}
+.sliedContainer{
+  margin: auto;
+}

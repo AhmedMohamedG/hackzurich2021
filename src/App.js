@@ -2,7 +2,12 @@ import './App.css';
 import {get_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
 import React, { useState } from 'react';
+import Dashboard from './Dashboard';
+import VoiceRecorder from './VoiceRecorder';
+
 import PatientDashboard from './PatientDashboard'
+import Button from '@mui/material/Button';
+
 function App() {
   console.log('json data', JSON.parse(get_breastcancerPROM('patient1','patient1')))
   const [isLogedIn, setIsLogedIn] = useState(false);
@@ -49,10 +54,14 @@ function App() {
   }
   return (
     <div className="App">
+    <Dashboard />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <VoiceRecorder />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <header className="App-header">
-        <button onClick={e => handleCLick(e)}>
+        <Button onClick={e => handleCLick(e)}>
           logOut
-        </button>
+        </Button>
       </header>
       {
         !isLogedIn ?
@@ -86,10 +95,12 @@ function App() {
             >
             </input>
           </div>
-          <input 
+          <Button 
           type="submit"
           value="LogIN"
-          />
+          >
+            Login
+            </Button>
           <p id="loginFormMsg"></p>
       </form>:
      <PatientDashboard 
