@@ -1,6 +1,8 @@
 import './App.css';
+import {send_breastcancerPROM} from './data/dummyData'
 
 function App() {
+  console.log('json data', JSON.parse(send_breastcancerPROM('patient1','patient1')))
   return (
     <div className="App">
       <header className="App-header">
