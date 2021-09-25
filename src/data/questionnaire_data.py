@@ -13,12 +13,22 @@ import os
 import pandas as pd
 
 
-filepath = "src\\data\\ICHOM_PROM_breast_cancer.xlsx"
-
-def xlsx_to_json(filepath):
+def xlsx_to_json(filepath: str = "src\\data\\ICHOM_PROM_breast_cancer.xlsx") -> None:
     """
-    Load questionnaire data from Excel file and save it as a JSON in the given format
-    Returns:
+    Loads questionnaire data from a curated Excel file (with question categories) and save it as a JSON file with
+    structure:
+    { sections:
+        [{
+            time_scale: str, questions:
+                [{
+                    id: str, type: str, text: str, answers: [text: str, number: int], category: str
+                }]
+        }]
+    }
+    --------------------------------------------------------------------------------------------------------------
+
+    Args:
+        filepath: Relative path of the Excel file. The JSON file will be saved in the same directory with the same name.
 
     """
 
@@ -67,14 +77,14 @@ def xlsx_to_json(filepath):
                                           answers=curr_answers,
                                           category=curr_row['Category']))
 
+    # Wrap data in 'sections'
     data_dict = {'sections': data}
 
+    # Write data to JSON
     json_filepath = os.path.splitext(filepath)[0] + '.json'
     with open(json_filepath, 'w') as f:
         json.dump(data_dict, f, indent=4)
-
-
-
+        
 
 if __name__ == "__main__":
     pass
