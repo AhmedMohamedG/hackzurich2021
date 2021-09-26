@@ -1,15 +1,43 @@
-# login
+# About the eProm Plus project:
+
+
+## Using the app
+
+### login
 
 use one of the following credentials:
-* userName: patient1 - userID:1
-* userName: patient2 - userID:2
-* userName: patient3 - userID:3
-* userName: patient4 - userID:4
 
+* Username: patient1 - userID:1
+* Username: patient2 - userID:2
+* Username: patient3 - userID:3
+* Username: patient4 - userID:4
 
-# Deployment to github pages
+### Deployment to github pages:
+
 The project is depoyed at:
  [https://ahmedmohamedg.github.io/hackzurich2021/](https://ahmedmohamedg.github.io/hackzurich2021/)
+
+## About
+
+### About the project
+
+The project was built and submitted as a draft for the hackzurich 2021 - Roche challenge, although we missed the final submission deadline with only 3 minutes, we had a great experience as the project aimed mainly as an attempt to ease the process of filling ePROMs for cancer patients and make it more appealing due to the extreme importacne of this process.
+
+### More about the ptoject
+
+Check the devpost page [https://devpost.com/software/eprom](https://devpost.com/software/eprom)
+
+### The team 
+
+* [Ahmed Mohamed Gaber](https://github.com/AhmedMohamedG)
+* [Patric Steiner](https://github.com/patricsteiner)
+* [Sibora Xhema](https://github.com/siborax)
+* [Hendrik Heiser](https://github.com/Hendriela)
+* [Roman Engeler](https://github.com/RomanEngeler1805)
+
+
+# About the React UI:
+
 
 ## Available Scripts
 
