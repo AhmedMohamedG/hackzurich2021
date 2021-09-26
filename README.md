@@ -1,4 +1,4 @@
-# About the eProm Plus project:
+# About the ePROM Plus project:
 
 
 ## Using the app
