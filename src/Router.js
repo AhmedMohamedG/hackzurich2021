@@ -20,7 +20,7 @@ function Router(props) {
           <div className="main">
 			<Switch>
 			<Route path={`/dashboard`}  
-			   render={(props) => { return <Dashboard {...props}
+			   render={(...props) => { return <Dashboard {...arguments}
 				  />} 
 				  }/>
             <Route path={`/Patientdashboard`}  
@@ -28,7 +28,7 @@ function Router(props) {
 				  />} 
 				  }/>
             <Route path={`/voicerecoreder`}  
-			   render={(props) => { return <VoiceRecorder {...props}
+			   render={(...props) => { return <VoiceRecorder {...arguments}
 				  />} 
 				  }/> 
             </Switch>

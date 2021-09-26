@@ -41,7 +41,7 @@ background-color:rgb(217, 238, 245);
   border:1px solid black;
   padding: 2rem 0;
 }
-.sliedContainer{
+.MuiBox-root , .css-1v5z18m{
   margin: auto;
 }
 .navEl{

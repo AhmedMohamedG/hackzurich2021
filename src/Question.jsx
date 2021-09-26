@@ -47,12 +47,16 @@ function Question(props) {
         defaultValue={1}
         valueLabelDisplay="auto"
         marks={marks}
-        min={question.answers[0].number}
-        max={question.answers[ question.answers.length -1].number}
+        min={parseInt(question.answers[0].number, 10)}
+        max={parseInt(question.answers[ question.answers.length -1].number, 10)}
       />
     </Box>
     </div>
-
+    <div>
+    <input  type="image" 
+            alt="Record"
+            src="./mic.png"/>
+    </div>
 
    </div>
   );
