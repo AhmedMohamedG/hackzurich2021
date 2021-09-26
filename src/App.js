@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {get_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
@@ -6,10 +7,12 @@ import Dashboard from './Dashboard';
 import VoiceRecorder from './VoiceRecorder';
 import PatientDashboard from './PatientDashboard'
 import Router from './Router'
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
 import { withRouter } from 'react-router';
 import { useHistory } from "react-router-dom";
 import NavBar from './NavBar'
+import { Accordion,FormControl, Button,InputGroup } from 'react-bootstrap';
+
 function App() {
   console.log('json data', JSON.parse(get_breastcancerPROM('patient1','patient1')))
   const [isLogedIn, setIsLogedIn] = useState(false);
@@ -59,45 +62,56 @@ function App() {
   }
   return (
     <div className="App">
+      {isLogedIn ? 
       <nav className="App-nav">
+        <span className="navHolder">
+        <NavBar />
+        </span>
+        <span className="logOutHolder">
         <Button onClick={e => handleCLick(e)}>
           logOut
         </Button>
-        <NavBar />
+        </span>
       </nav>
+      :''}
       {
         !isLogedIn ?
         <form 
           id="logInform"
           onSubmit={(e)=> handleSubmit(e)}
         >
-          <div>
-            <label>
-              Name:
-            </label>
-            <input type='text'
-                    name="nameInput"
-                    id="nameInput"
-                    required 
-                    placeholder="Name"
-                    title="Enter your name"
-            >
-            </input>
+          <div className="loginField">
+        
+            <InputGroup size="lg">
+              <InputGroup.Text id="inputGroup-sizing-lg">Name:</InputGroup.Text>
+              <FormControl aria-label="Name"
+                            aria-describedby="inputGroup-sizing-sm" 
+                            type='text'
+                            name="nameInput"
+                            id="nameInput"
+                            required 
+                            placeholder="Name"
+                            title="Enter your name"
+                            />
+            </InputGroup>
           </div>
-          <div>
-            <label>
-              ID:
-            </label>
-            <input type='text'
-                    name="idInput"
-                    id="idInput"
-                    required 
-                    placeholder="ID"
-                    title="Enter your ID"
-            >
-            </input>
+          <div className="loginField">
+            
+          <InputGroup size="lg">
+              <InputGroup.Text id="inputGroup-sizing-lg">ID:</InputGroup.Text>
+              <FormControl aria-label="ID"
+                            aria-describedby="inputGroup-sizing-sm" 
+                            type='text'
+                            name="idInput"
+                            id="idInput"
+                            required 
+                            placeholder="ID"
+                            title="Enter your ID"
+                            />
+            </InputGroup>
           </div>
-          <Button 
+          <Button
+          variant="success" 
           type="submit"
           value="LogIN"
           >

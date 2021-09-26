@@ -34,12 +34,12 @@ const breastcancerPROM = {
     
 }
 
-
+const jsonData = require('./ICHOM_PROM_breast_cancer.json')
 export const get_breastcancerPROM = (patientName,patientID )=>{
     const questionsObject = { patientName,
                                  patientID,
                                  type:'breastcancerPROM',
-                                 questions:breastcancerPROM }
+                                 questions:jsonData }
     return JSON.stringify(questionsObject);
 }
 

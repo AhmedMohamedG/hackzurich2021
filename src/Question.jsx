@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+import VoiceRecorder from './VoiceRecorder';
+import { Accordion, Button } from 'react-bootstrap';
 
 function Question(props) {
   const {questionObj : question,Counter} = props;
@@ -32,13 +34,19 @@ function Question(props) {
     return value;
   }
 
+const handleClick_next = e=>{
+  e.preventDefault();
+  document?.getElementById?.(`question${Counter+1}`)?.scrollIntoView?.({behavior: "smooth"});
+}
+
+const handleClick_prev = e=>{
+  e.preventDefault();
+  document?.getElementById?.(`question${Counter-1}`)?.scrollIntoView?.({behavior: "smooth"});
+}
   return (
     <div id={`question${Counter}`}className="question">
-        <p>{question.text}</p>
-        
-
+        <p className="questionText">{question.text}</p>
     <div className="sliedContainer">
-
     <Box sx={{ width: 300 }}>
       <Slider
         aria-label="Custom marks"
@@ -53,10 +61,59 @@ function Question(props) {
     </Box>
     </div>
     <div>
-    <input  type="image" 
-            alt="Record"
-            src="./mic.png"/>
+    
+   
+    <div className="questionMedia">
     </div>
+    </div>
+
+
+    <Accordion defaultActiveKey="0">
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>
+      <input  type="image"
+            alt="Record"
+            src="https://raw.githubusercontent.com/AhmedMohamedG/hackzurich2021/master/public/cam.png"
+            />
+    </Accordion.Header>
+    <Accordion.Body>
+      camera comp
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1">
+    <Accordion.Header>
+    <input  type="image"
+            alt="Record"
+            src="https://raw.githubusercontent.com/AhmedMohamedG/hackzurich2021/master/public/mic.png"
+            />
+    
+    </Accordion.Header>
+    <Accordion.Body>
+          <VoiceRecorder />
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
+
+
+
+
+
+
+
+
+
+<Button 
+variant="primary"
+className='questionButtons'
+onClick={e => handleClick_next(e)}>
+  Next
+</Button>
+<Button 
+variant="primary"
+className='questionButtons'
+onClick={e => handleClick_prev(e)}>
+  Previous
+</Button>
 
    </div>
   );

@@ -1,29 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
   font-size: 1.3rem;
 }
 
 /*Login - Start*/
-#logInform{
-width: 90%;
-}
-#logInform *{
-  margin: 5vh auto;
-  min-height: 10vh;
-}
-#logInform label{
-  width: 20%;
-  margin-right: 2% ;
-}
-#logInform input[type='text']{
-  width: 75%;
-}
-
-#logInform input[type='submit']{
-  display:block;
+.loginField{
+  width:80%;
   margin: auto;
 }
-
+.input-group {
+  margin: 2rem auto;
+}
 /*Login - End*/
 .promContanier{
 background-color:rgb(217, 238, 245);
@@ -47,4 +39,31 @@ background-color:rgb(217, 238, 245);
 .navEl{
   margin: 2rem;
   font-size: 1.5rem;
+}
+.question input[type="image"]{
+  height: 5vw;
+  margin: 2vw;
+}
+.question{
+  box-shadow: 5px 10px #888888;
+
+}
+.questionText{
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 600;
+  margin:2rem;
+}
+.questionButtons{
+  margin:2rem;
+}
+
+.logOutHolder{
+  width: 15%;
+  display:inline-block;
+}
+.navHolder{
+  width: 85%;
+  display:inline-block;
+
 }
