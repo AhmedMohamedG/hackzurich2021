@@ -23,7 +23,6 @@ export const NavLink = styled(Link)`
         color: #000
     }
 `
-
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
