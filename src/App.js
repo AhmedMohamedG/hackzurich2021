@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {get_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Dashboard from './Dashboard';
 import VoiceRecorder from './VoiceRecorder';
 import PatientDashboard from './PatientDashboard'
@@ -19,7 +19,17 @@ function App() {
   const [user, setUser] = useState(false);
   const [proms, setProms] = useState([]);
   let history = useHistory();
-
+  useEffect(() => {
+    const userName = localStorage.getItem('userName');
+    const userID = localStorage.getItem('userID');
+    const userObject = users.find(elem => elem.userName === userName && elem.userID === userID )
+    if(userObject){
+      setIsLogedIn(true);
+      setUser(userObject);
+      getProms(userObject);
+      history.push('/Patientdashboard');
+    }
+  },[]);
 
   const getProms = (obj) =>{
     const {userName , userID , conditions} = obj;
@@ -45,6 +55,8 @@ function App() {
   const handleCLick = e =>{
     e.preventDefault();
     setIsLogedIn(false);
+    localStorage.setItem('userName', '');
+    localStorage.setItem('userID', '');
   }
   const handleSubmit = (e) =>{
     e.preventDefault();
@@ -55,7 +67,9 @@ function App() {
       setIsLogedIn(true);
       setUser(userObject);
       getProms(userObject);
-      history.push('/Patientdashboard')
+      history.push('/Patientdashboard');
+      localStorage.setItem('userName', userName);
+      localStorage.setItem('userID', userID);
     }else{
      document.getElementById('loginFormMsg').innerText = 'You have entered the wrong name or ID, please try again.'
     }

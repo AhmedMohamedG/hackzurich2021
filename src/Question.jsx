@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import VoiceRecorder from './VoiceRecorder';
-import { Accordion, Button } from 'react-bootstrap';
+import { Accordion, Button,ProgressBar } from 'react-bootstrap';
 
 function Question(props) {
-  const {questionObj : question,Counter} = props;
-  console.log( 'min',question.answers[0].number)
-  console.log( 'max',question.answers[ question.answers.length -1].number)
+  const {questionObj : question,Counter ,sectionLength ,index} = props;
+  const progressPercentage = (((parseInt(index, 10) +1 )/ parseInt(sectionLength, 10)) *100).toFixed(1)
   const marks = []
 
   question.answers.forEach(answer => {
@@ -45,6 +44,8 @@ const handleClick_prev = e=>{
 }
   return (
     <div id={`question${Counter}`}className="question">
+      <p>Progress for that section:</p>
+      <ProgressBar now={progressPercentage} label={`${progressPercentage }%`} />
         <p className="questionText">{question.text}</p>
     <div className="sliedContainer">
     <Box sx={{ width: 300 }}>
@@ -67,8 +68,7 @@ const handleClick_prev = e=>{
     </div>
     </div>
 
-
-    <Accordion defaultActiveKey="0">
+    <Accordion >
   <Accordion.Item eventKey="0">
     <Accordion.Header>
       <input  type="image"
@@ -77,7 +77,7 @@ const handleClick_prev = e=>{
             />
     </Accordion.Header>
     <Accordion.Body>
-      camera comp
+        <input type="file" accept="image/*" capture/>
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
@@ -94,14 +94,6 @@ const handleClick_prev = e=>{
   </Accordion.Item>
 </Accordion>
 
-
-
-
-
-
-
-
-
 <Button 
 variant="primary"
 className='questionButtons'
@@ -114,7 +106,6 @@ className='questionButtons'
 onClick={e => handleClick_prev(e)}>
   Previous
 </Button>
-
    </div>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Question from './Question';
+import { Badge } from 'react-bootstrap';
+
 function Prom(props) {
   const {prom} = props;
   let questionsCounter = 0;
@@ -12,7 +14,9 @@ function Prom(props) {
                 {section?.tytle !== 'NoTitle'?<h1>{ section?.tytle}</h1>:''}
                 {section.questions.map((question,index) => {
                     questionsCounter++
-                    return <Question 
+                    return <Question
+                            sectionLength = {section.questions.length} 
+                            index = {index}
                             Counter = {questionsCounter}
                             key={`${sectionIndex}-${index}`}
                             questionObj={question} />
@@ -21,6 +25,7 @@ function Prom(props) {
 
             )
         })}
+        <Badge bg="success"  size="xxl">Thanks for filling the eProm</Badge>
    </div>
   );
 }
