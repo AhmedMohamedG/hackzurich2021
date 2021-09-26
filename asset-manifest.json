@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hackzurich2021/static/css/main.7ff5abfd.chunk.css",
-    "main.js": "/hackzurich2021/static/js/main.1b2940ba.chunk.js",
-    "main.js.map": "/hackzurich2021/static/js/main.1b2940ba.chunk.js.map",
-    "runtime-main.js": "/hackzurich2021/static/js/runtime-main.a4ef6557.js",
-    "runtime-main.js.map": "/hackzurich2021/static/js/runtime-main.a4ef6557.js.map",
+    "main.css": "/hackzurich2021/static/css/main.121bdc10.chunk.css",
+    "main.js": "/hackzurich2021/static/js/main.225f46c0.chunk.js",
+    "main.js.map": "/hackzurich2021/static/js/main.225f46c0.chunk.js.map",
+    "runtime-main.js": "/hackzurich2021/static/js/runtime-main.7246eb78.js",
+    "runtime-main.js.map": "/hackzurich2021/static/js/runtime-main.7246eb78.js.map",
     "static/css/2.11509bcb.chunk.css": "/hackzurich2021/static/css/2.11509bcb.chunk.css",
-    "static/js/2.63ba02a7.chunk.js": "/hackzurich2021/static/js/2.63ba02a7.chunk.js",
-    "static/js/2.63ba02a7.chunk.js.map": "/hackzurich2021/static/js/2.63ba02a7.chunk.js.map",
-    "static/js/3.f179bc50.chunk.js": "/hackzurich2021/static/js/3.f179bc50.chunk.js",
-    "static/js/3.f179bc50.chunk.js.map": "/hackzurich2021/static/js/3.f179bc50.chunk.js.map",
+    "static/js/2.f3d52716.chunk.js": "/hackzurich2021/static/js/2.f3d52716.chunk.js",
+    "static/js/2.f3d52716.chunk.js.map": "/hackzurich2021/static/js/2.f3d52716.chunk.js.map",
+    "static/js/3.ba488c42.chunk.js": "/hackzurich2021/static/js/3.ba488c42.chunk.js",
+    "static/js/3.ba488c42.chunk.js.map": "/hackzurich2021/static/js/3.ba488c42.chunk.js.map",
     "index.html": "/hackzurich2021/index.html",
     "static/css/2.11509bcb.chunk.css.map": "/hackzurich2021/static/css/2.11509bcb.chunk.css.map",
-    "static/css/main.7ff5abfd.chunk.css.map": "/hackzurich2021/static/css/main.7ff5abfd.chunk.css.map",
-    "static/js/2.63ba02a7.chunk.js.LICENSE.txt": "/hackzurich2021/static/js/2.63ba02a7.chunk.js.LICENSE.txt",
+    "static/css/main.121bdc10.chunk.css.map": "/hackzurich2021/static/css/main.121bdc10.chunk.css.map",
+    "static/js/2.f3d52716.chunk.js.LICENSE.txt": "/hackzurich2021/static/js/2.f3d52716.chunk.js.LICENSE.txt",
     "static/media/microphone~MMbrAzIj.svg": "/hackzurich2021/static/media/microphone~MMbrAzIj.52a4fd8a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a4ef6557.js",
+    "static/js/runtime-main.7246eb78.js",
     "static/css/2.11509bcb.chunk.css",
-    "static/js/2.63ba02a7.chunk.js",
-    "static/css/main.7ff5abfd.chunk.css",
-    "static/js/main.1b2940ba.chunk.js"
+    "static/js/2.f3d52716.chunk.js",
+    "static/css/main.121bdc10.chunk.css",
+    "static/js/main.225f46c0.chunk.js"
   ]
 }
