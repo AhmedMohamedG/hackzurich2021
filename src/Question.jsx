@@ -4,16 +4,40 @@ import Slider from '@mui/material/Slider';
 
 function Question(props) {
   const {questionObj : question,Counter} = props;
-  console.log( 'min',question.answers[0].number)
-  console.log( 'max',question.answers[ question.answers.length -1].number)
-  const marks = []
+  console.log( 'min', question.answers[0].number)
+  console.log( 'max', question.answers[ question.answers.length -1].number)
+  //const marks = []
 
+  /*
   question.answers.forEach(answer => {
     marks.push({
       value: parseInt(answer.number, 10),
       label: answer.text,
     })
-  }) 
+  })
+  */
+  const marks = [
+    {
+      value: 0,
+      label: 'bad',
+    },
+    {
+      value: 1,
+      label: '',
+    },
+    {
+      value: 2,
+      label: '',
+    },
+    {
+      value: 3,
+      label: '',
+    },
+    {
+      value: 4,
+      label: 'excellent',
+    },
+  ];
     
   console.log('marks', marks)
    
@@ -37,9 +61,9 @@ function Question(props) {
         <p>{question.text}</p>
         
 
-    <div className="sliedContainer">
+    <div className="slideContainer">
 
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: 300}} alignItems="center">
       <Slider
         aria-label="Custom marks"
         getAriaValueText={valuetext}
@@ -47,8 +71,8 @@ function Question(props) {
         defaultValue={1}
         valueLabelDisplay="auto"
         marks={marks}
-        min={question.answers[0].number}
-        max={question.answers[ question.answers.length -1].number}
+        min={0} //question.answers[0].number
+        max={4}
       />
     </Box>
     </div>

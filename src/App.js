@@ -2,11 +2,11 @@ import './App.css';
 import {get_breastcancerPROM} from './data/dummyData';
 import users from './data/dummyUserData';
 import React, { useState } from 'react';
+import {Button, TextField} from '@material-ui/core';
 import Dashboard from './Dashboard';
 import VoiceRecorder from './VoiceRecorder';
 import PatientDashboard from './PatientDashboard'
 import Router from './Router'
-import Button from '@mui/material/Button';
 import { withRouter } from 'react-router';
 import { useHistory } from "react-router-dom";
 import NavBar from './NavBar'
@@ -60,9 +60,6 @@ function App() {
   return (
     <div className="App">
       <nav className="App-nav">
-        <Button onClick={e => handleCLick(e)}>
-          logOut
-        </Button>
         <NavBar />
       </nav>
       {
@@ -72,38 +69,25 @@ function App() {
           onSubmit={(e)=> handleSubmit(e)}
         >
           <div>
-            <label>
-              Name:
-            </label>
-            <input type='text'
-                    name="nameInput"
-                    id="nameInput"
-                    required 
-                    placeholder="Name"
-                    title="Enter your name"
-            >
-            </input>
-          </div>
-          <div>
-            <label>
-              ID:
-            </label>
-            <input type='text'
-                    name="idInput"
-                    id="idInput"
-                    required 
-                    placeholder="ID"
-                    title="Enter your ID"
-            >
-            </input>
-          </div>
-          <Button 
-          type="submit"
-          value="LogIN"
-          >
-            Login
-            </Button>
-          <p id="loginFormMsg"></p>
+            <TextField
+                  id="nameInput"
+                  label="Name"
+                  defaultValue=""
+            />
+            </div>
+            <div>
+            <TextField
+                id="idInput"
+                label="Password"
+                type="password"
+                autoComplete="current-password"
+              />
+              </div>
+              <div>
+              <Button className='loginInput' variant="contained" color="primary" type="submit" value="LogIN">
+                logIN
+              </Button>
+              </div>
       </form>:
      <Router 
         user= {user}

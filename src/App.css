@@ -4,29 +4,30 @@
 }
 
 /*Login - Start*/
-#logInform{
-width: 90%;
-}
-#logInform *{
-  margin: 5vh auto;
-  min-height: 10vh;
-}
-#logInform label{
-  width: 20%;
-  margin-right: 2% ;
-}
-#logInform input[type='text']{
-  width: 75%;
+#logInform {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-#logInform input[type='submit']{
-  display:block;
-  margin: auto;
+#nameInput{
+  margin-bottom: 20px;
+}
+
+#idInput{
+  margin-bottom: 20px;
+}
+
+.loginInput.MuiButton-root{
+  margin-top: 20px;
 }
 
 /*Login - End*/
 .promContanier{
-background-color:rgb(217, 238, 245);
+background-color: #F5F5F5;
 }
 
 .QuestionsSection{
@@ -36,15 +37,23 @@ background-color:rgb(217, 238, 245);
 }
 
 .question{
-  background-color: white;
+  background-color: #fff;
   margin:2rem;
   border:1px solid black;
   padding: 2rem 0;
 }
-.sliedContainer{
-  margin: auto;
+
+.slideContainer{
+  width: 300;
+  margin-left: 35%;
+  margin-top: 30px;
 }
+
 .navEl{
   margin: 2rem;
   font-size: 1.5rem;
+}
+
+.question{
+  border-radius: 30px;
 }
